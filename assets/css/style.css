@@ -3,17 +3,25 @@
   --background-gray: #121214;
   --background-white: #ffffff;
   --header-form: #8257e5;
+  --text-label: #4e4958;
   font-size: 62.5%;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
   background: var(--background-gradient);
 }
 
@@ -72,4 +80,44 @@ h2 {
 form {
   background: var(--background-white);
   min-height: 50rem;
+  padding: 3.1rem 6.4rem 6.4rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.input-wrapper label {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--text-label);
+  margin-bottom: 0.8rem;
+}
+
+.input-wrapper label span {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #c1bccc;
+  margin-left: 1rem;
+}
+
+input {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  height: 5.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+  font-size: 1.6;
+  line-height: 2.6;
+  color: #c1bccc;
+}
+
+#name,
+#firtName {
+  width: 30rem;
 }

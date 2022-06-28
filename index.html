@@ -29,18 +29,45 @@
       <fieldset>
         <div class="input-wrapper">
           <div class="input-name">
-            <label for="name">Nome</label>
-            <input type="text" id="name">
+            <div class="input-first-name">
+              <label for="first-name">Nome</label>
+              <input type="text" id="first-name">
+            </div>
+            <div class="input-second-name">
+              <label for="second-name">Sobrenome</label>
+              <input type="text" id="second-name">
+            </div>
           </div>
-          <div class="input-first-name">
-            <label for="firstName">Sobrenome</label>
-            <input type="text" id="firstName">
+
+          <div class="input-mail">
+            <label for="mail">Email<span>(digite um email válido)</span></label>
+            <input type="email" id="mail">
           </div>
         </div>
 
-        <div class="input-mail">
-          <label for="mail">Email<span>(digite um email válido)</span></label>
-          <input type="email" id="mail">
+        <div class="fieldset-wrapper">
+          <legend>Informações do mentor</legend>
+
+          <div class="input-mentor">
+            <label for="">Selecione quem foi o seu mentor</label>
+            <select id="list-name">
+              <option value="list-name"></option>
+              <option value="1">Paulo Andrade</option>
+              <option value="2">Juliana Souza</option>
+              <option value="3">Diego Farias</option>
+              <option value="4">Luciana Silva</option>
+            </select>
+          </div>
+
+          <div class="input-textarea">
+            <label for="">Feedback sobre o mentor</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="input-check">
+            <input type="checkbox" id="checkox">
+            <label for="checkox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+          </div>
         </div>
       </fieldset>
     </form>

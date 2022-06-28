@@ -85,36 +85,12 @@ form {
 
 fieldset {
   border: none;
-}
-
-input {
-  background: #fafafc;
-  border: 1px solid #e6e6f0;
-  border-radius: 8px;
-  height: 5.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0 2rem;
-  font-size: 1.6;
-  line-height: 2.6;
-  color: #c1bccc;
-}
-
-.input-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input-wrapper input {
-  width: 30rem;
-}
-
-.input-name,
-.input-first-name {
   display: flex;
   flex-direction: column;
 }
 
-label {
+label,
+p {
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: var(--text-label);
@@ -129,8 +105,84 @@ span {
   margin-left: 1rem;
 }
 
+input,
+select,
+textarea {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  height: 5.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+  font-size: 1.6;
+  line-height: 2.6;
+  color: #c1bccc;
+  appearance: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.input-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-name input,
+.input-mentor select {
+  width: 30rem;
+}
+
+.input-first-name,
+.input-second-name,
 .input-mail {
   display: flex;
   flex-direction: column;
-  text-align: left;
+}
+
+fieldset legend {
+  font-family: "Staatliches", cursive;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #253b51;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 0.8rem;
+  margin-bottom: 3rem;
+}
+
+.input-mentor,
+.input-textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-mentor,
+.input-textarea {
+  margin-bottom: 3rem;
+}
+
+textarea {
+  max-width: 62.2rem;
+  min-height: 17rem;
+}
+
+.input-check {
+  display: flex;
+  align-items: center;
+}
+
+#checkox {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  margin-right: 0.8rem;
+}
+
+.input-check input,
+.input-check label {
+  margin: 0;
+  padding: 0;
 }

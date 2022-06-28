@@ -87,24 +87,6 @@ fieldset {
   border: none;
 }
 
-.input-wrapper {
-  display: flex;
-}
-
-.input-wrapper label {
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-  color: var(--text-label);
-  margin-bottom: 0.8rem;
-}
-
-.input-wrapper label span {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  color: #c1bccc;
-  margin-left: 1rem;
-}
-
 input {
   background: #fafafc;
   border: 1px solid #e6e6f0;
@@ -117,7 +99,38 @@ input {
   color: #c1bccc;
 }
 
-#name,
-#firtName {
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrapper input {
   width: 30rem;
+}
+
+.input-name,
+.input-first-name {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--text-label);
+  text-align: left;
+  margin-bottom: 0.8rem;
+}
+
+span {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #c1bccc;
+  margin-left: 1rem;
+}
+
+.input-mail {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
